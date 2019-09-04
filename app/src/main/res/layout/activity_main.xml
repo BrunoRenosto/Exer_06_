@@ -1,0 +1,43 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#42a5f5">
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_height="50sp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:layout_above="@+id/linha"
+        android:background="#ffffff"
+        />
+
+    <View
+        android:id="@+id/linha"
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:background="#0d47a1"
+        android:layout_above="@+id/senha"/>
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_height="50sp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:layout_centerVertical="true"
+        android:background="#ffffff"/>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:text="Cadastrar"
+        android:layout_below="@+id/senha"/>
+
+
+</RelativeLayout>
